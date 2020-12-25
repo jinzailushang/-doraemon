@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>哆啦 A 梦</title>
+</head>
+<body>
+<style id="demo2"></style>
+<div id="demo"></div>
+<div id="buttons">
+    <button id="btnPause">暂停</button>
+    <button id="btnPlay">播放</button>
+    <button id="btnSlow">慢速</button>
+    <button id="btnNormal">中速</button>
+    <button id="btnFast">快速</button>
+</div>
+<style>
+    * {
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    #buttons {
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    #buttons > button {
+        margin-bottom: 10px;
+        padding: 4px 8px;
+    }
+
+    #demo2 {
+        display: none;
+    }
+
+    #demo {
+        width: 100%;
+        border: 2px solid #1b54c4;
+        padding: 10px;
+        position: fixed;
+        height: 50vh;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+    }
+
+    #demo::-webkit-scrollbar {
+        display: none;
+    }
+
+    #html {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+    }
+</style>
+<div id="html">
+    <h1>哆啦 A 梦</h1>
+    <div class="wrap">
+        <div class="cajaovalo">
+            <div class="ovalo"></div>
+            <div class="semi-circulo">
+                <div class="palo"></div>
+            </div>
+        </div>
+
+        <div class="cabeza">
+            <div class="circulo-dos">
+                <ul class="navegacion">
+                    <li>
+                        <div class="pupila">
+                            <div class="iris1"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pupila2">
+                            <div class="iris1"></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="nariz">
+                    <div class="lunar"></div>
+                </div>
+                <div class="palonariz"></div>
+                <div class="boca">
+                    <ul class="corazon"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="huevo">
+            <div class="bufanda"></div>
+            <div class="campana">
+                <div class="bolanegra"></div>
+                <div class="palonegro"></div>
+            </div>
+            <div class="ovalocesta">
+                <div class="cesta"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="test.js"></script>
+</body>
+</html>
